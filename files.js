@@ -1110,7 +1110,7 @@ let obj = [
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (23)/02-52o.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (23)/03-53a.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (23)/04-53i.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (23)/05--53h2a.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (23)/05-53h-2a.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (23)/05-53h-1a.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (23)/05-53h.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (23)/06-53n.jpg",
@@ -1369,7 +1369,7 @@ let obj = [
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (23)/95-74d-2c.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (23)/95-74d.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (23)/96-75h.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (23)/97--75h-1a2.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (23)/97-75h-1a2.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (23)/97-75h-1a.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (23)/97-75h-1a1.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (23)/97-75h-1ac.jpg",
@@ -1390,7 +1390,7 @@ let obj = [
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (24)/06-56a-1c.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (24)/06-56a.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (24)/07-57f.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (24)/08--57m-2c.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (24)/08-57m-2c.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (24)/08-57m-1a.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (24)/08-57m-1a1.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (24)/08-57m.jpg",
@@ -1554,7 +1554,7 @@ let obj = [
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (25)/20-69d-1c.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (25)/20-69d.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (25)/21-70h.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (25)/22--70h-1a.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (25)/22-70h-1a.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (25)/22-70h.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (25)/23-71j.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (25)/24-72i.jpg",
@@ -3971,7 +3971,7 @@ let obj = [
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (52)/08-78s-9v.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (52)/09-78s-10.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (52)/09-78s-10v.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (52)/1.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (52)/01.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (52)/10-78s-11.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (52)/10-78s-11v.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (52)/100-79j-101.jpg",
@@ -4253,8 +4253,8 @@ let obj = [
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (52)/25-78o-26v.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (52)/26-78o-27.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (52)/26-78o-27v.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (52)/27--28.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (52)/27--28v.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (52)/27-28.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (52)/27-28v.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (52)/28-78o-29.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (52)/28-78o-29v.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (52)/29-78o-30.jpg",
@@ -5940,7 +5940,7 @@ let obj = [
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (57)/162-88l-4.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (57)/162-88l-4v.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (57)/162-88l.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (57)/163------.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (57)/163.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (57)/164-63m-1c.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (57)/164-63m.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (57)/165-63g.jpg",
@@ -6103,7 +6103,7 @@ let obj = [
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (57)/206-70f-1a.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (57)/206-70f.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (57)/207-72i.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (57)/208-76--1v.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (57)/208-76-1v.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (57)/208-76-.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (57)/209-65i-1v.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (57)/209-65i-2.jpg",
@@ -6718,8 +6718,8 @@ let obj = [
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (61)/16-80g-1a.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (61)/16-80g-1v.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (61)/16-80g.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (61)/17-----.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (61)/17-----1v.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (61)/17.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (61)/17-1v.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (61)/18-54i.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (61)/19-55d-1c.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (61)/19-55d.jpg",
@@ -8439,7 +8439,7 @@ let obj = [
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (66)/26-89m.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (66)/27-89g-1c.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (66)/27-89g.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (66)/28----.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (66)/28.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (67)/01-59n.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (67)/02-61j-1c.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (67)/02-61j.jpg",
@@ -8507,8 +8507,8 @@ let obj = [
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/05-66i.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/06-66i.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/07-66i.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/08----.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/08----1v.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/08.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/08-1v.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/09-53a.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/10-53a.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/11-53a.jpg",
@@ -8537,7 +8537,7 @@ let obj = [
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/30-65g.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/31-65g.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/32-65n.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/33----.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/33.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/34-66j.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/35-66j.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/36-66f.jpg",
@@ -8593,13 +8593,13 @@ let obj = [
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/51-89a.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/52-28o.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/53-28o.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/54-----1v.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/54----.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/55----.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/56----.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/56----1v.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/54-1v.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/54.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/55.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/56.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/56-1v.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/57-28o.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/58-----.jpg",
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (68)/58.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (69)/01-85o-1v.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (69)/01-85o-2.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (69)/01-85o.jpg",
@@ -41454,7 +41454,15 @@ function jsonFiles(obj) {
           data: itemSplit[1].split(".")[0],
         });
       }
-      if (itemSplit.length != 2 && itemSplit.length != 3) {
+      if (itemSplit.length == 1) {
+        jsonPronto.push({
+          serie: serie,
+          item: itemSplit[0],
+          data: "sd",
+        });
+      }
+
+      if (itemSplit.length < 1 && itemSplit.length > 3) {
         deuRuim.push(elem);
       }
     }
@@ -41478,7 +41486,14 @@ function jsonFiles(obj) {
           data: itemSplit[1].split(".")[0],
         });
       }
-      if (itemSplit.length != 2 && itemSplit.length != 3) {
+      if (itemSplit.length == 1) {
+        jsonPronto.push({
+          serie: serie,
+          item: itemSplit[0],
+          data: "sd",
+        });
+      }
+      if (itemSplit.length < 1 && itemSplit.length > 3) {
         deuRuim.push(elem);
       }
     }

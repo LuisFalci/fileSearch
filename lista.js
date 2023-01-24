@@ -1,17 +1,14 @@
-// let obj = [
-//   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (1)/01-80n-1c.jpg",
-//   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (54)/54.4 - Mapas São Francisco de Paula - 1864-71-11/07-sd-8v.jpg",
-//   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (1)/01-80n.jpg",
-//   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (1)/02-87d-1v.jpg",
-//   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (1)/02-87d-2c.jpg",
-//   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (1)/02-87d.jpg",
-//   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (54)/54.4 - Mapas São Francisco de Paula - 1864-71-11/07-sd-9.jpg",
-//   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (54)/54.4 - Mapas São Francisco de Paula - 1864-71-11/07-sd-9v.jpg",
-// ];
-
-import { obj } from "./files.js";
-
-console.log(obj)
+ let obj = [
+   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (1)/01-80n-1c.jpg",
+   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (54)/54.4 - Mapas São Francisco de Paula - 1864-71-11/07-sd-8v.jpg",
+   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (1)/01-80n.jpg",
+   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (1)/02-87d-1v.jpg",
+   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (1)/02-87d-2c.jpg",
+   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (1)/02-87d.jpg",
+   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (54)/54.4 - Mapas São Francisco de Paula - 1864-71-11/07-sd-9.jpg",
+   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (54)/54.4 - Mapas São Francisco de Paula - 1864-71-11/07-sd-9v.jpg",
+   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (74)/Pasta 11.01/07-69-j-29v.jpg",
+ ];
 
 const fs = require("fs");
 
@@ -80,7 +77,7 @@ function writeJsonFile(pathFile, data) {
 
 jsonFiles(obj);
 console.log(jsonPronto);
-writeJsonFile(
-  "C:/Users/luisg/Documents/GitHub/fileSearch/filesListOrg.json",
-  jsonPronto
-);
+// writeJsonFile(
+//   "C:/Users/luisg/Documents/GitHub/fileSearch/filesListOrg.json",
+//   jsonPronto
+// );
