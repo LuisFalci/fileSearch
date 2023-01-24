@@ -38,26 +38,3 @@ search(PATH_BASE);
 
 writeJsonFile("C:/Users/luisg/Documents/GitHub/fileSearch/arquivos.json", obj);
 
-// let obj = [
-//   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (1)/01-80n-1c.jpg",
-//   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (1)/01-80n.jpg",
-//   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (1)/02-87d-1v.jpg",
-//   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (1)/02-87d-2c.jpg",
-//   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (1)/02-87d.jpg"
-// ];
-
-// let arr = []; 
-// obj.map((elem) => {
-//   arr.push(elem.split()) 
-// })
-
-// let jsonPronto = [];
-
-// let splitei1 = obj[0].split(")/")[1];
-// let splitei2 = splitei1.split("-");
-
-// if(splitei2.length >= 3){
-//   jsonPronto.push({ item: splitei2[0], ano: splitei2[1]} )
-// }
-
-// console.log(jsonPronto)

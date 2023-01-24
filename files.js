@@ -1,4 +1,4 @@
-[
+let obj = [
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (1)/01-80n-1c.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (1)/01-80n.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (1)/02-87d-1v.jpg",
@@ -41419,5 +41419,83 @@
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (178)/13-64a-2.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (178)/13-64a-2c.jpg",
   "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (178)/13-64a.jpg",
-  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (178)/14-60l.jpg"
-]
+  "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015/IMPERIO (178)/14-60l.jpg",
+];
+
+const fs = require("fs");
+
+let arr = [];
+let jsonPronto = [];
+let deuRuim = [];
+
+function jsonFiles(obj) {
+  obj.map((elem) => {
+    arr.push(elem.split());
+
+    let splitPath = elem.split("/");
+    let serie = splitPath[5];
+
+    if (splitPath.length >= 8) {
+      let item = splitPath[7];
+      let itemSplit = item.split("-");
+
+      if (itemSplit.length == 3) {
+        jsonPronto.push({
+          serie: serie,
+          item: itemSplit[0],
+          data: itemSplit[1],
+          algo: itemSplit[2].split(".")[0],
+        });
+      }
+      if (itemSplit.length == 2) {
+        jsonPronto.push({
+          serie: serie,
+          item: itemSplit[0],
+          data: itemSplit[1].split(".")[0],
+        });
+      }
+      if (itemSplit.length != 2 && itemSplit.length != 3) {
+        deuRuim.push(elem);
+      }
+    }
+
+    if (splitPath.length == 7) {
+      let item = splitPath[6];
+      let itemSplit = item.split("-");
+
+      if (itemSplit.length == 3) {
+        jsonPronto.push({
+          serie: serie,
+          item: itemSplit[0],
+          data: itemSplit[1],
+          algo: itemSplit[2].split(".")[0],
+        });
+      }
+      if (itemSplit.length == 2) {
+        jsonPronto.push({
+          serie: serie,
+          item: itemSplit[0],
+          data: itemSplit[1].split(".")[0],
+        });
+      }
+      if (itemSplit.length != 2 && itemSplit.length != 3) {
+        deuRuim.push(elem);
+      }
+    }
+  });
+}
+
+function writeJsonFile(pathFile, data) {
+  fs.writeFile(pathFile, JSON.stringify(data), (err) => {
+    if (err) {
+      throw err;
+    }
+    console.log("JSON data is saved.");
+  });
+}
+
+jsonFiles(obj);
+writeJsonFile(
+  "C:/Users/luisg/Documents/GitHub/fileSearch/deuRuim.json",
+  deuRuim
+);
