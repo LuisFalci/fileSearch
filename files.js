@@ -41438,10 +41438,14 @@ function jsonFiles(obj) {
     if (splitPath.length >= 8) {
       let item = splitPath[7];
       let itemSplit = item.split("-");
+      let imperioSplit = splitPath[5].split("(");
+      let imperioSplit2 = imperioSplit[1].split(")");
+      let subserieSplit = splitPath;
 
       if (itemSplit.length == 3) {
         jsonPronto.push({
-          serie: serie,
+          serie: imperioSplit2[0],
+          subserie: subserieSplit[6],
           item: itemSplit[0],
           data: itemSplit[1],
           algo: itemSplit[2].split(".")[0],
@@ -41449,14 +41453,16 @@ function jsonFiles(obj) {
       }
       if (itemSplit.length == 2) {
         jsonPronto.push({
-          serie: serie,
+          serie: imperioSplit2[0],
+          subserie: subserieSplit[6],
           item: itemSplit[0],
           data: itemSplit[1].split(".")[0],
         });
       }
       if (itemSplit.length == 1) {
         jsonPronto.push({
-          serie: serie,
+          serie: imperioSplit2[0],
+          subserie: subserieSplit[6],
           item: itemSplit[0],
           data: "sd",
         });
@@ -41467,36 +41473,38 @@ function jsonFiles(obj) {
       }
     }
 
-    if (splitPath.length == 7) {
-      let item = splitPath[6];
-      let itemSplit = item.split("-");
+     if (splitPath.length == 7) {
+       let item = splitPath[6];
+       let itemSplit = item.split("-");
+       let imperioSplit = splitPath[5].split("(");
+       let imperioSplit2 = imperioSplit[1].split(")");
 
-      if (itemSplit.length == 3) {
-        jsonPronto.push({
-          serie: serie,
-          item: itemSplit[0],
-          data: itemSplit[1],
-          algo: itemSplit[2].split(".")[0],
-        });
-      }
-      if (itemSplit.length == 2) {
-        jsonPronto.push({
-          serie: serie,
-          item: itemSplit[0],
-          data: itemSplit[1].split(".")[0],
-        });
-      }
-      if (itemSplit.length == 1) {
-        jsonPronto.push({
-          serie: serie,
-          item: itemSplit[0],
-          data: "sd",
-        });
-      }
-      if (itemSplit.length < 1 && itemSplit.length > 3) {
-        deuRuim.push(elem);
-      }
-    }
+       if (itemSplit.length == 3) {
+         jsonPronto.push({
+           serie: imperioSplit2[0],
+           item: itemSplit[0],
+           data: itemSplit[1],
+           algo: itemSplit[2].split(".")[0],
+         });
+       }
+       if (itemSplit.length == 2) {
+         jsonPronto.push({
+           serie: imperioSplit2[0],
+           item: itemSplit[0],
+           data: itemSplit[1].split(".")[0],
+         });
+       }
+       if (itemSplit.length == 1) {
+         jsonPronto.push({
+           serie: imperioSplit2[0],
+           item: itemSplit[0],
+           data: "sd",
+         });
+       }
+       if (itemSplit.length < 1 && itemSplit.length > 3) {
+         deuRuim.push(elem);
+       }
+     }
   });
 }
 
@@ -41510,7 +41518,11 @@ function writeJsonFile(pathFile, data) {
 }
 
 jsonFiles(obj);
-writeJsonFile(
+ writeJsonFile(
+   "C:/Users/luisg/Documents/GitHub/fileSearch/filesListOrg.json",
+   jsonPronto
+ );
+ writeJsonFile(
   "C:/Users/luisg/Documents/GitHub/fileSearch/deuRuim.json",
   deuRuim
 );
