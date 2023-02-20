@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const PATH_BASE = "D:/Downloads/HD Giovanni/Acervos/AHJF_FCMI-2015";
+const PATH_BASE = "D:/HD Giovanni/AHJF_FCMI-2015";
 
 let obj = [];
 
@@ -36,5 +36,5 @@ function writeJsonFile(pathFile, data) {
 
 search(PATH_BASE);
 
-writeJsonFile("C:/Users/luisg/Documents/GitHub/fileSearch/arquivos.json", obj);
+writeJsonFile("C:/Users/luisg/Documents/GitHub/fileSearch/codeSearchResult.json", obj);
 
