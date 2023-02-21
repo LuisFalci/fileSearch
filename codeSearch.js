@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const PATH_BASE = "D:/HD Giovanni/AHJF_FCMI-2015";
+const PATH_BASE = "D:/HD Giovanni/AHJF_FCMI";
 
 let obj = [];
 
@@ -11,7 +11,7 @@ function search(path) {
     let upperCaseElem = elem.toUpperCase();
     if (stats.isFile()) {
       if((!upperCaseElem.includes(".DB")) && (!upperCaseElem.includes(".TXT")) && (!upperCaseElem.includes(".DOC"))){
-      obj.push(path+"/"+elem);
+      obj.push(path.split("Giovanni/")[1]+"/"+elem);
     }
     return elem;
     } else {
@@ -21,7 +21,8 @@ function search(path) {
 }
 
 function writeJsonFile(pathFile, data) {
-  data = data.sort((a,b)=> (Number(a.split(" ")[2].split("(")[1].split(")")[0])) - (Number(b.split(" ")[2].split("(")[1].split(")")[0])))
+  // filtra apenas a string do número e orneda de forma crescente
+  data = data.sort((a,b)=> (Number(a.split("AHJF_FCMI/")[1].split("/")[0])) - (Number(b.split("AHJF_FCMI/")[1].split("/")[0])));
   data.map((elem) => {
     elem.split()
   })
