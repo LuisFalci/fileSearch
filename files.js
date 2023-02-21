@@ -41441,8 +41441,8 @@ function jsonFiles(obj) {
       
       if (itemSplit.length == 3) {
         let data = itemSplit[1].split(/(\d+|\D+)/).filter(Boolean); 
-        let ano = data[0];  
-        let mes = data[1];
+        let ano = yearFilter(data[0]);  
+        let mes = monthFilter(data[1]);
         jsonPronto.push({
           filepath: elem,
           serie: splitPath[1],
@@ -41455,8 +41455,8 @@ function jsonFiles(obj) {
       }
       if (itemSplit.length == 2) {
         let data = itemSplit[1].split(".")[0].split(/(\d+|\D+)/).filter(Boolean); 
-        let ano = data[0];  
-        let mes = data[1];
+        let ano = yearFilter(data[0]); 
+        let mes = monthFilter(data[1]);
 
         jsonPronto.push({
           filepath: elem,
@@ -41490,8 +41490,8 @@ function jsonFiles(obj) {
 
        if (itemSplit.length == 3) {
         let data = itemSplit[1].split(/(\d+|\D+)/).filter(Boolean); 
-        let ano = data[0];  
-        let mes = data[1];
+        let ano = yearFilter(data[0]); 
+        let mes = monthFilter(data[1]);
          jsonPronto.push({
           filepath: elem, 
           serie: splitPath[1],
@@ -41503,8 +41503,8 @@ function jsonFiles(obj) {
        }
        if (itemSplit.length == 2) {
         let data = itemSplit[1].split(".")[0].split(/(\d+|\D+)/).filter(Boolean); 
-        let ano = data[0];  
-        let mes = data[1];
+        let ano = yearFilter(data[0]); 
+        let mes = monthFilter(data[1]);
          jsonPronto.push({
           filepath: elem, 
           serie: splitPath[1],
@@ -41532,6 +41532,67 @@ function jsonFiles(obj) {
      }
   });
 }
+
+function monthFilter(month) {
+  let monthFiltered;
+  
+switch (month) {
+  case 'j':
+    monthFiltered = 'janeiro';
+    break;
+  case 'f':
+    monthFiltered = 'fevereiro';
+    break;
+  case 'm':
+    monthFiltered = 'março';
+    break;
+  case 'a':
+    monthFiltered = 'abril';
+    break;
+  case 'i':
+    monthFiltered = 'maio';
+    break;
+  case 'h':
+    monthFiltered = 'junho';
+    break;
+  case 'l':
+    monthFiltered = 'julho';
+    break;
+  case 'g':
+    monthFiltered = 'agosto';
+    break;
+  case 's':
+    monthFiltered = 'setembro';
+    break;
+  case 'o':
+    monthFiltered = 'outubro';
+    break;
+  case 'n':
+    monthFiltered = 'novembro';
+    break;
+  case 'd':
+    monthFiltered = 'dezembro';
+    break;
+  case 'sd':
+    monthFiltered = 'sem data';
+    break;
+  default:
+    monthFiltered = 'Opção inválida';
+}
+return monthFiltered;
+}
+
+function yearFilter(year) {
+  let yearFiltered;
+    if(year.length == 1){
+      return yearFiltered = '180'+year;
+    }if(year.length == 2){
+      return yearFiltered = '18'+year;;
+    }else{
+      return "sd";
+    }
+}
+
 
 function writeJsonFile(pathFile, data) {
   fs.writeFile(pathFile, JSON.stringify(data), (err) => {
