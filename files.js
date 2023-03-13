@@ -41433,20 +41433,20 @@ function jsonFiles(obj) {
     arr.push(elem.split());
 
     let splitPath = elem.split("/");
-    
+
     // Arquivos com subsérie
     if (splitPath.length == 4) {
       let item = splitPath[3];
       let itemSplit = item.split("-");
-      
+
       if (itemSplit.length == 3) {
-        let data = itemSplit[1].split(/(\d+|\D+)/).filter(Boolean); 
-        let ano = yearFilter(data[0]);  
+        let data = itemSplit[1].split(/(\d+|\D+)/).filter(Boolean);
+        let ano = yearFilter(data[0]);
         let mes = monthFilter(data[1]);
         jsonPronto.push({
           filepath: elem,
           serie: splitPath[1],
-          subserie: splitPath[2],
+          subserie: subserieFilter(splitPath[2]),
           item: itemSplit[0],
           ano: ano,
           mes: mes,
@@ -41454,28 +41454,21 @@ function jsonFiles(obj) {
         });
       }
       if (itemSplit.length == 2) {
-        let data = itemSplit[1].split(".")[0].split(/(\d+|\D+)/).filter(Boolean); 
-        let ano = yearFilter(data[0]); 
+        let data = itemSplit[1].split(".")[0].split(/(\d+|\D+)/).filter(Boolean);
+        let ano = yearFilter(data[0]);
         let mes = monthFilter(data[1]);
 
         jsonPronto.push({
           filepath: elem,
           serie: splitPath[1],
-          subserie: splitPath[2],
+          subserie: subserieFilter(splitPath[2]),
           item: itemSplit[0],
           ano: ano,
           mes: mes,
         });
       }
       if (itemSplit.length == 1) {
-        jsonPronto.push({
-          filepath: elem,
-          serie: splitPath[1],
-          subserie: splitPath[2],
-          item: itemSplit[0],
-          ano: "sd",
-          mes: "sd",
-        });
+        deuRuim.push(elem);
       }
 
       if (itemSplit.length < 1 && itemSplit.length > 3) {
@@ -41484,113 +41477,142 @@ function jsonFiles(obj) {
     }
 
     // Arquivos sem subsérie 
-     if (splitPath.length == 3) {
-       let item = splitPath[2];
-       let itemSplit = item.split("-");
+    if (splitPath.length == 3) {
+      let item = splitPath[2];
+      let itemSplit = item.split("-");
 
-       if (itemSplit.length == 3) {
-        let data = itemSplit[1].split(/(\d+|\D+)/).filter(Boolean); 
-        let ano = yearFilter(data[0]); 
+      if (itemSplit.length == 3) {
+        let data = itemSplit[1].split(/(\d+|\D+)/).filter(Boolean);
+        let ano = yearFilter(data[0]);
         let mes = monthFilter(data[1]);
-         jsonPronto.push({
-          filepath: elem, 
+        jsonPronto.push({
+          filepath: elem,
           serie: splitPath[1],
           item: itemSplit[0],
           ano: ano,
           mes: mes,
           complemento: itemSplit[2].split(".")[0],
-         });
-       }
-       if (itemSplit.length == 2) {
-        let data = itemSplit[1].split(".")[0].split(/(\d+|\D+)/).filter(Boolean); 
-        let ano = yearFilter(data[0]); 
+        });
+      }
+      if (itemSplit.length == 2) {
+        let data = itemSplit[1].split(".")[0].split(/(\d+|\D+)/).filter(Boolean);
+        let ano = yearFilter(data[0]);
         let mes = monthFilter(data[1]);
-         jsonPronto.push({
-          filepath: elem, 
+        jsonPronto.push({
+          filepath: elem,
           serie: splitPath[1],
-           item: itemSplit[0],
-           ano: ano,
-           mes: mes,
-         });
-       }
-       if (itemSplit.length == 1) {
-         jsonPronto.push({
-          filepath: elem, 
+          item: itemSplit[0],
+          ano: ano,
+          mes: mes,
+        });
+      }
+      if (itemSplit.length == 1) {
+        let justItem = itemSplit[0];
+        if (itemSplit[0].includes(".")) {
+          justItem = itemSplit[0].split(".");
+        }
+        jsonPronto.push({
+          filepath: elem,
           serie: splitPath[1],
-           item: itemSplit[0],
-           ano: "sd",
-           mes: "sd",
-         });
-       }
-       if (itemSplit.length < 1 && itemSplit.length > 3) {
-         deuRuim.push(elem);
-       }
-     }
+          item: justItem[0],
+          ano: null,
+          mes: null,
+        });
+      }
+      if (itemSplit.length < 1 && itemSplit.length > 3) {
+        deuRuim.push(elem);
+      }
+    }
 
-     if (splitPath.length > 4) {
+    if (splitPath.length > 4) {
       deuRuim.push(elem);
-     }
+    }
   });
 }
 
 function monthFilter(month) {
   let monthFiltered;
-  
-switch (month) {
-  case 'j':
-    monthFiltered = '1';
-    break;
-  case 'f':
-    monthFiltered = '2';
-    break;
-  case 'm':
-    monthFiltered = '3';
-    break;
-  case 'a':
-    monthFiltered = '4';
-    break;
-  case 'i':
-    monthFiltered = '5';
-    break;
-  case 'h':
-    monthFiltered = '6';
-    break;
-  case 'l':
-    monthFiltered = '7';
-    break;
-  case 'g':
-    monthFiltered = '8';
-    break;
-  case 's':
-    monthFiltered = '9';
-    break;
-  case 'o':
-    monthFiltered = '10';
-    break;
-  case 'n':
-    monthFiltered = '11';
-    break;
-  case 'd':
-    monthFiltered = '12';
-    break;
-  case 'sd':
-    monthFiltered = 'sem data';
-    break;
-  default:
-    monthFiltered = 'Opção inválida';
-}
-return monthFiltered;
+
+  switch (month) {
+    case 'j':
+      monthFiltered = '1';
+      break;
+    case 'f':
+      monthFiltered = '2';
+      break;
+    case 'm':
+      monthFiltered = '3';
+      break;
+    case 'a':
+      monthFiltered = '4';
+      break;
+    case 'i':
+      monthFiltered = '5';
+      break;
+    case 'h':
+      monthFiltered = '6';
+      break;
+    case 'l':
+      monthFiltered = '7';
+      break;
+    case 'g':
+      monthFiltered = '8';
+      break;
+    case 's':
+      monthFiltered = '9';
+      break;
+    case 'o':
+      monthFiltered = '10';
+      break;
+    case 'n':
+      monthFiltered = '11';
+      break;
+    case 'd':
+      monthFiltered = '12';
+      break;
+    case 'sd':
+      monthFiltered = null;
+      break;
+    default:
+      monthFiltered = null;
+  }
+  return monthFiltered;
 }
 
 function yearFilter(year) {
   let yearFiltered;
-    if(year.length == 1){
-      return yearFiltered = '180'+year;
-    }if(year.length == 2){
-      return yearFiltered = '18'+year;;
-    }else{
-      return "sd";
+  if (!isNaN(parseFloat(year))) {
+    if (year.length == 1) {
+      return yearFiltered = '180' + year;
+    } if (year.length == 2) {
+      return yearFiltered = '18' + year;;
     }
+  }
+  else {
+    return null;
+  }
+}
+
+function subserieFilter(subserie) {
+  let subserieFiltered = subserie;
+  if (subserie.includes("Pasta") || subserie.includes("pasta")) {
+    subserieFiltered = subserie.split(" ")[1];
+    if (subserieFiltered.includes(".")) {
+      subserieFiltered = subserieFiltered.split(".")[0]
+      return removeFirstZero(subserieFiltered);
+    }
+    return removeFirstZero(subserieFiltered);
+  } else {
+    subserieFiltered = subserieFiltered.split(".")[1].split(" ")[0];
+    return removeFirstZero(subserieFiltered);
+  }
+}
+
+function removeFirstZero(str) {
+  if (str.charAt(0) === "0") {
+    return str.slice(1);
+  }
+  return str;
 }
 
 
@@ -41604,11 +41626,11 @@ function writeJsonFile(pathFile, data) {
 }
 
 jsonFiles(obj);
- writeJsonFile(
-   "C:/Users/luisg/Documents/GitHub/fileSearch/filesListOrg.json",
-   jsonPronto
- );
- writeJsonFile(
+writeJsonFile(
+  "C:/Users/luisg/Documents/GitHub/fileSearch/filesListOrg.json",
+  jsonPronto
+);
+writeJsonFile(
   "C:/Users/luisg/Documents/GitHub/fileSearch/deuRuim.json",
   deuRuim
 );
